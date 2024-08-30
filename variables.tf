@@ -260,6 +260,12 @@ variable "skip_destroy" {
   default     = null
 }
 
+variable "ignore_changes" {
+  description = "Specifies resource attributes of the Lambda function that Terraform should ignore when planning updates to the associated remote object."
+  type        = list(string)
+  default     = []
+}
+
 ###############
 # Function URL
 ###############
